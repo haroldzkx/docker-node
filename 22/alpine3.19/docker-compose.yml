@@ -1,0 +1,9 @@
+services:
+  my-service:
+    build:
+      context: .
+      dockerfile: Dockerfile
+      platforms:
+        - linux/amd64
+        - linux/arm64
+    image: node:22.11.0-alpine3.19
